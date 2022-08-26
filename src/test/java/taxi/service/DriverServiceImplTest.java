@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import taxi.lib.Injector;
 import taxi.model.Driver;
 import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
