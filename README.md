@@ -7,6 +7,8 @@
 
 This is a web application which simulates work of taxi service. It contents with backend and frontend parts.
 The main purpose of this application is to keep records of taxi service drivers and cars. 
+You can try this app [here](https://quiet-cove-19847.herokuapp.com).
+
 Non-authorized users are able to:
 
 - login to the service with existing crendtials
