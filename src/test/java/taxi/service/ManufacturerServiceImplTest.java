@@ -11,21 +11,21 @@ class ManufacturerServiceImplTest {
             = (ManufacturerService) injector.getInstance(ManufacturerService.class);
 
     @Test
-    void create() {
+    void create_Ok() {
         Manufacturer manufacturer = new Manufacturer("Volvo", "Swedish");
         Manufacturer actual = manufacturerService.create(manufacturer);
         assertEquals(manufacturer, actual);
     }
 
     @Test
-    void get() {
+    void get_Ok() {
         Manufacturer manufacturer = manufacturerService.create(new Manufacturer("Audi", "Germany"));
         Manufacturer actual = manufacturerService.get(manufacturer.getId());
         assertEquals(manufacturer, actual);
     }
 
     @Test
-    void update() {
+    void update_Ok() {
         Manufacturer manufacturer = manufacturerService.create(new Manufacturer("Porsche", "Germ."));
         manufacturer.setCountry("Germany");
         Manufacturer actual = manufacturerService.update(manufacturer);
@@ -33,7 +33,7 @@ class ManufacturerServiceImplTest {
     }
 
     @Test
-    void delete() {
+    void delete_Ok() {
         Manufacturer manufacturer = manufacturerService.create(new Manufacturer("Mersedes", "Germany"));
         assertTrue(manufacturerService.delete(manufacturer.getId()));
     }

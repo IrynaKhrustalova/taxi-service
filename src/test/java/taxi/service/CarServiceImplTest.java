@@ -20,7 +20,7 @@ class CarServiceImplTest {
 
     @BeforeAll
     static void beforeAll() {
-        manufacturer = manufacturerService.get(2L);
+        manufacturer = manufacturerService.create(new Manufacturer("Skoda", "Czech republic"));
         driver = new Driver("Bill", "123", "bill@gmail.com", "8894");
         driverService.create(driver);
     }
