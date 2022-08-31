@@ -72,7 +72,7 @@ This manual describes main steps for application running. To run this project yo
 - <PORT> - port number of database (for local database: 8080)
 - <DATABASE_NAME> - name of database(for local database: taxi-service)
 - <DATABASE_USERNAME> - username to get permission to read and write to database
-- <DATABASE_PASSWORD - password for <DATABASE_USERNAME> user
+- <DATABASE_PASSWORD> - password for <DATABASE_USERNAME> user
 
 8. Start Tomcat.
 
