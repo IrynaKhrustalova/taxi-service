@@ -6,12 +6,12 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnectionUtil {
-    private static final String URL_TO_DATABASE = "jdbc:mysql://db4free.net: ";
-    private static final String PORT = "3306";
+    private static final String URL_TO_DATABASE = "jdbc:mysql://YOUR_URL_TO_DATABASE: ";
+    private static final String PORT = "YOUR_PORT_NUMBER";
 
-    private static final String DATABASE_NAME = "/sql220491";
-    private static final String DATABASE_USERNAME = "sql220491";
-    private static final String DATABASE_PASSWORD = "220491Ira!";
+    private static final String DATABASE_NAME = "YOUR_DATABASE_NAME";
+    private static final String DATABASE_USERNAME = "YOUR_USERNAME";
+    private static final String DATABASE_PASSWORD = "YOUR_PASSWORD";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     static {
