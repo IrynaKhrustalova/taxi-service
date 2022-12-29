@@ -6,12 +6,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnectionUtil {
-    private static final String URL = "jdbc:mysql://<YOUR_URL_TO_DATABASE>: ";
-    private static final String PORT = "<YOUR_PORT_NUMBER>";
-
-    private static final String DATABASE_NAME = "<YOUR_DATABASE_NAME>";
-    private static final String USERNAME = "<YOUR_DATABASE_USERNAME>";
-    private static final String PASSWORD = "<YOUR_DATABASE_PASSWORD>";
+    private static final String URL = "jdbc:mysql://db4free.net: 3306"
+            + "/sql220491";
+    private static final String USERNAME = "sql220491";
+    private static final String PASSWORD = "220491Ira!";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     static {
@@ -27,8 +25,7 @@ public class ConnectionUtil {
         dbProperties.setProperty("user", USERNAME);
         dbProperties.setProperty("password", PASSWORD);
         try {
-            return DriverManager.getConnection(URL
-                    + PORT + DATABASE_NAME, dbProperties);
+            return DriverManager.getConnection(URL, dbProperties);
         } catch (SQLException e) {
             throw new RuntimeException("Can't create connection to DB ", e);
         }
